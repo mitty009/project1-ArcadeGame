@@ -10,7 +10,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0
 }
 
 .grid {
@@ -23,7 +22,16 @@ body {
 }
 
 .cells {
-  width: 20%;
-  height: 20%;
+  width: 10%;
+  height: 10%;
   border: 1px solid black;
 }
+
+.available {
+  background-color: aqua;
+}
+
+.selected {
+  background-color: green;
+}
+
