@@ -109,14 +109,17 @@ h1, h2, h3 {
   background: #eee;
   border-radius: 5px;
 }
+.grass {
+  background-image: url(./images/grass.png);
+  background-size: 50px;
+}
 
 .cars {
   position: relative;
   background-image: url(./images/car.png);
-  justify-content: center;
-  align-self: center;
-  background-size: 60px;
+  background-size: 50px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .road {
@@ -125,8 +128,7 @@ h1, h2, h3 {
 
 .lillypad {
   background-image: url(./images/lillypad.png);
-  align-items: center;
-  justify-content: center;
+  background-position: center;
   background-size: 48px;
   background-color: lightslategray;
   background-repeat: no-repeat;
@@ -138,9 +140,13 @@ h1, h2, h3 {
 .logs {
   background-image: url(./images/log.png);
   background-size: 50px;
+  background-position: center;
 }
 
 .frog {
   background-image: url(./images/frog.png);
   background-size: contain;
 }
+
+
+

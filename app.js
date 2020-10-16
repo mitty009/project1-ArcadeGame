@@ -28,6 +28,7 @@ score.innerHTML = `Player Score: ${playerScore}`
 for (let i = 0; i < width ** 2; i++) {
   const div = document.createElement('div')
   div.classList.add('cells')
+  div.classList.add('grass')
   div.setAttribute('id', i)
   grid.appendChild(div)
   cells.push(div)
@@ -82,23 +83,29 @@ class RenderObjects {
   renderObjects() {
     for (let i = 1; i < width; i = i + 2) {
       cells[i].classList.add('lillypad')
+      cells[i].classList.remove('grass')
     }
     for (let i = width; i < 27; i++) {
       cells[i].classList.add('river')
+      cells[i].classList.remove('grass')
     }
     for (let i = 0; i < width; i += 2) {
       cells[i].classList.add('river')
+      cells[i].classList.remove('grass')
     }
     for (let i = 45; i < 63; i++) {
       cells[i].classList.add('road')
+      cells[i].classList.remove('grass')
     }
     for (let i = width * 3 - 1; i >= width * 3 - 3; i--) {
       cells[i].classList.add('logs')
+      cells[i].classList.remove('grass')
       logsLeft.push(cells[i])
       logsIndexLeft--
     }
     for (let i = width; i < width + 3; i++) {
       cells[i].classList.add('logs')
+      cells[i].classList.remove('grass')
       logsRight.push(cells[i])
       logsIndexRight++
     }
@@ -108,12 +115,14 @@ class RenderObjects {
 function renderCarsLeft() {
   for (let i = 56; i < 63; i = i + 3) {
     cells[i].classList.add('cars')
+    cells[i].classList.remove('grass')
     carsLeft.push(cells[i])
   }
 }
 function renderCarsRight() {
   for (let i = 45; i < 54; i = i + 3) {
     cells[i].classList.add('cars')
+    cells[i].classList.remove('grass')
     carsRight.push(cells[i])
   }
 }
