@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Arcade Game</title>
+  <title>Frogger!</title>
 </head>
+
 <body>
+  <header>
+    <div>
+      <h1>Frogger!</h1>
+    </div>
+  </header>
+  <section>
+    <div id="score">
+      <h3></h3>
+    </div>
+    <div id="lives">
+      <h3></h3>
+    </div>
+    <div class="timer" id="30">Time Remaining: 30</div>
+  </section>
+  <section>
+    <div id="output"></div>
+  </section>
   <main>
     <div class="grid">
     </div>
-
-    <script src="app.js"></script>
+    <div id="highscore"></div>
   </main>
+  <footer>
+    <button id="button">Click to Start!</button>
+    <button id="restart">Restart</button>
+    <script src="app.js"></script>
+  </footer>
 </body>
+
 </html>
